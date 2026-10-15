@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mac-mini-Archive: a personal, locally operated Google Drive archive integration.">
+  <meta name="referrer" content="no-referrer">
+  <title>Mac-mini-Archive</title>
+  <style>
+    :root { color-scheme: light dark; font: 17px/1.7 system-ui, sans-serif; }
+    body { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+    h1, h2 { line-height: 1.25; } h1 { font-size: 2rem; }
+    a { color: #246ec5; } @media (prefers-color-scheme: dark) { a { color: #91bfff; } }
+    .tag { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
+    aside { border-inline-start: 3px solid #668899; padding-inline-start: 18px; }
+    footer { margin-top: 48px; border-top: 1px solid #8899aa66; padding-top: 18px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+<header><p class="tag">Personal archive integration</p><h1>Mac-mini-Archive</h1></header>
+<main>
+  <p>Mac-mini-Archive is a personal integration for its owner's Mac mini. It uses the locally installed <a href="https://rclone.org/drive/">rclone command-line tool</a> to copy selected archive files to the owner's Google Drive and retrieve them when needed.</p>
+  <aside><strong>This is an information website, not a storage or sign-in portal.</strong> It has no upload form, Google authorization flow, application server, or public registration.</aside>
+  <h2>What the integration does</h2>
+  <ul>
+    <li>Allows the owner and authorized local tools to upload selected files into a dedicated archive area.</li>
+    <li>Reads relevant file metadata and available storage capacity.</li>
+    <li>Downloads archive files and compares cryptographic hashes to check restoration.</li>
+    <li>Keeps local deletion separate from upload. A completed upload does not automatically delete its source.</li>
+  </ul>
+  <h2>Google Drive access</h2>
+  <p>The integration requests the limited <code>drive.file</code> permission. It can manage files created by or specifically authorized to this integration, rather than requesting access to every file in the account. Google sign-in and consent occur on Google's own pages during local setup, not on this website.</p>
+  <p>It is intended for personal use, not as a public service. Authorization can be revoked, and its continued validity is subject to Google's policies. It is not a promise of immutable storage or guaranteed recovery.</p>
+  <h2>Privacy and contact</h2>
+  <p>Read the <a href="privacy.html">Privacy Policy</a> for information about access, storage, retention, and revocation. Questions about this personal integration may be directed to its <a href="https://github.com/faceall-666">repository owner</a>.</p>
+  <p lang="ar" dir="rtl">هذه صفحات تعريف وخصوصية لربط أرشفة شخصي على الماك ميني. لا تُرفع ملفات الأرشيف أو مفاتيح الدخول إلى هذا الموقع أو مستودعه العام.</p>
+</main>
+<footer><a href="privacy.html">Privacy Policy</a> · <a href="https://github.com/faceall-666/mac-mini-archive-info">Public information repository</a><br>Last updated: 15 October 2026</footer>
+</body>
+</html>
